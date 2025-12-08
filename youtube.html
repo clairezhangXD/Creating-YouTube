@@ -38,15 +38,12 @@
           display: block;
       }
 
-      .video-info {
-          display: inline-block;
-          vertical-align: top;
+      .video-info-grid {
+          display: grid;
+          grid-template-columns: 42px 1fr;
       }
 
       .channel-column {
-          display: inline-block;
-          vertical-align: top;
-          width: 35px;
           margin-right: 10px;
       }
 
@@ -77,12 +74,12 @@
         <img src="thumbnails/stray-kids-thumbnail.avif" class="thumbnail">
       </div>
 
-      <div>
+      <div class="video-info-grid">
         <div class="channel-column">
           <img src="channel-pictures/mnet-picture.jpg" class="channel-picture">
         </div>
 
-        <div class="video-info">
+        <div>
           <p class="video-title">[#2025MAMA] Stray Kids</p>
 
           <p class="video-youtuber">Mnet K-POP</p>
@@ -97,7 +94,7 @@
         <img src="thumbnails/kobeni-tries-to-levitate-thumbnail.avif" class="thumbnail">
       </div>
 
-      <div>
+      <div class="video-info-grid">
         <div class="channel-column">
           <img src="channel-pictures/yuyu-picture.jpg" class="channel-picture">
         </div>
