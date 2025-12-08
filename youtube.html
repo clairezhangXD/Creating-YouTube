@@ -21,21 +21,24 @@
           display: block;
       }
 
+      .video-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 6px;
+          row-gap: 10px;
+      }
+
       .video-preview {
           display: inline-block;
           margin: 6px;
           vertical-align: top;
       }
 
-      .thumbnail-row {
-          width:400px;
-          margin-bottom: 12px;
-      }
 
       .thumbnail {
           width: 100%;
           border-radius: 20px;
-          display: block;
+          margin-bottom: 4px;
       }
 
       .video-info-grid {
@@ -69,41 +72,121 @@
   <body>
     <input class="search-bar" type="text" placeholder="Search">
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img src="thumbnails/stray-kids-thumbnail.avif" class="thumbnail">
-      </div>
-
-      <div class="video-info-grid">
-        <div class="channel-column">
-          <img src="channel-pictures/mnet-picture.jpg" class="channel-picture">
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/stray-kids-thumbnail.avif" class="thumbnail">
         </div>
 
-        <div>
-          <p class="video-title">[#2025MAMA] Stray Kids</p>
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/mnet-picture.jpg" class="channel-picture">
+          </div>
 
-          <p class="video-youtuber">Mnet K-POP</p>
+          <div>
+            <p class="video-title">[#2025MAMA] Stray Kids</p>
 
-          <p class="video-stats">3.9M views &middot; 8 days ago</p>
+            <p class="video-youtuber">Mnet K-POP</p>
+
+            <p class="video-stats">3.9M views &middot; 8 days ago</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="video-preview">
-      <div class="thumbnail-row">
-        <img src="thumbnails/kobeni-tries-to-levitate-thumbnail.avif" class="thumbnail">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/supersimpledev-thumbnail.avif" class="thumbnail">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/supersimpledev-picture.jpg" class="channel-picture">
+          </div>
+          <div class="video-info">
+            <p class="video-title">HTML & CSS Full Course - Beginner to Pro</p>
+
+            <p class="video-youtuber">SuperSimpleDev</p>
+
+            <p class="video-stats">17M views &middot; 3 years ago</p>
+          </div>
+        </div>
       </div>
 
-      <div class="video-info-grid">
-        <div class="channel-column">
-          <img src="channel-pictures/yuyu-picture.jpg" class="channel-picture">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/healing-camp-thumbnail.avif" class="thumbnail">
         </div>
-        <div class="video-info">
-          <p class="video-title">Kobeni Tries to Levitate</p>
 
-          <p class="video-youtuber">yuyulivestreamdiary</p>
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/twice-picture.jpg" class="channel-picture">
+          </div>
 
-          <p class="video-stats">133K views &middot; 2 weeks ago</p>
+          <div>
+            <p class="video-title">TWICE REALITY "TIME TO TWICE" Healing Camping EP.03</p>
+
+            <p class="video-youtuber">TWICE</p>
+
+            <p class="video-stats">2.6M views &middot; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/emma-thumbnail.avif" class="thumbnail">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/emma-picture.jpg" class="channel-picture">
+          </div>
+          <div class="video-info">
+            <p class="video-title">embracing being single</p>
+
+            <p class="video-youtuber">anything goes with emma chamberlain</p>
+
+            <p class="video-stats">318K views &middot; 3 weeks ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/fortnite-thumbnail.avif" class="thumbnail">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/kingjoe-picture.jpg" class="channel-picture">
+          </div>
+
+          <div>
+            <p class="video-title">44 Kill Solo Vs Squads Wins "Fortnite Simpsons" Gameplay Full Game (Ps4 Controller)</p>
+
+            <p class="video-youtuber">KingJoe83</p>
+
+            <p class="video-stats">293K views &middot; 1 month ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img src="thumbnails/kobeni-tries-to-levitate-thumbnail.avif" class="thumbnail">
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-column">
+            <img src="channel-pictures/yuyu-picture.jpg" class="channel-picture">
+          </div>
+          <div class="video-info">
+            <p class="video-title">Kobeni Tries to Levitate</p>
+
+            <p class="video-youtuber">yuyulivestreamdiary</p>
+
+            <p class="video-stats">133K views &middot; 2 weeks ago</p>
+          </div>
         </div>
       </div>
     </div>
