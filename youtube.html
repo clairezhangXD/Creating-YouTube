@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>YouTube 2.0</title>
-  <style>
-    .thumbnail {
-        width: 300px;
-        border-radius: 20px;
-    }
+  <head>
+    <title>YouTube 2.0</title>
+    <style>
+      .thumbnail {
+          width: 375px;
+          border-radius: 20px;
+          display: block;
+      }
 
-    .search-bar {
-        font-size: 20px;
-        margin-left: 12px;
-        border-radius: 20px;
-        padding: 5px 10px;
-    }
-  </style>
-</head>
-<body>
-  <img src="stray-kids-thumbnail.avif" class="thumbnail">
-  <input class="search-bar" type="text" placeholder="Search">
-</body>
+      .search-bar {
+          font-size: 20px;
+          margin-left: 12px;
+          border-radius: 20px;
+          padding: 5px 10px;
+          display: block;
+      }
+
+      .video-title {
+          margin-top: 12px;
+      }
+
+      .video-preview {
+          display: inline-block;
+          margin: 6px;
+          vertical-align: top;
+      }
+
+      .video-info {
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      .channel-container {
+          display: inline-block;
+          vertical-align: top;
+          width: 30px;
+          margin-top: 10px;
+          margin-right: 10px;
+      }
+
+      .channel-picture {
+          width: 100%;
+          border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <div class="video-preview">
+      <div>
+        <img src="thumbnails/stray-kids-thumbnail.avif" class="thumbnail">
+      </div>
+
+      <div>
+        <div class="channel-container">
+          <img src="channel-pictures/mnet-picture.jpg" class="channel-picture">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">[#2025MAMA] Stray Kids</p>
+
+          <p class="video-youtuber">Mnet K-POP</p>
+
+          <p class="video-stats">3.9M views &middot; 8 days ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div>
+        <img src="thumbnails/kobeni-tries-to-levitate-thumbnail.avif" class="thumbnail">
+      </div>
+
+      <div>
+        <div class="channel-container">
+          <img src="channel-pictures/yuyu-picture.jpg" class="channel-picture">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Kobeni Tries to Levitate</p>
+
+          <p class="video-youtuber">yuyulivestreamdiary</p>
+
+          <p class="video-stats">133K views &middot; 2 weeks ago</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
