@@ -1,0 +1,8 @@
+.sidebar {
+    background-color: pink;
+    position: fixed;
+    width: 70px;
+    top: 54px;
+    bottom: 0;
+    left: 0;
+}

@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     height: 54px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
 }
 
 .left-section {
@@ -23,15 +28,13 @@
 .middle-section {
     display: flex;
     flex: 1;
-    margin-left: 60px;
     align-items: center;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .search-bar {
     display: flex;
     flex: 1;
-    max-width: 370px;
     height: 28px;
     font-size: 14px;
     font-family: "Roboto";
@@ -39,7 +42,9 @@
     border-color: lightgrey;
     border-style: solid;
     border-width: 1px;
+    border-right-style: none;
     padding: 5px 14px;
+    margin-left: 32px;
 
 }
 
